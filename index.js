@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware to handle JSON requests
 app.use(express.json());
+app.use(router);
 
 // Route
 app.use('/api', router);
